@@ -1170,5 +1170,44 @@ or wrap each row of columns in a <div class="row"> */
 	    font-weight: normal;
 	    font-style: normal; }
 */
-/* Main
+/* For Header section
 ==================================== */
+html, body {
+  width: 100%;
+  height: 100%; }
+
+header.band {
+  text-align: center;
+  background-color: #012e64;
+  padding-top: 20%;
+  /* full screen image */
+  background: url(../img/slide-1.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /* full width and height */
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0; }
+
+header.band h1,
+header.band h2,
+header.band p {
+  color: white; }
+
+div.band.main {
+  text-align: center;
+  background-color: #012e64;
+  /* full screen image */
+  background: url(../img/slide-2.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /* full width and height */
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0; }
