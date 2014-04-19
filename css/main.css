@@ -925,11 +925,12 @@ header.band h3 a {
   -moz-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.9);
   -o-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.9);
   box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.9);
-  padding-top: 5em;
-  padding-bottom: 5em;
+  padding-top: 2em;
+  padding-bottom: 2em;
   background-image: url(../img/bg_dark.jpg);
   text-align: center;
-  font-size: 2em; }
+  font-size: 2em;
+  position: relative; }
 
 .download a {
   color: white;
