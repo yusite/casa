@@ -9,14 +9,6 @@ $(document).ready(function() {
 		$('#ajax').html($(href).html()).hide().fadeIn('slow');
 	});
 
-	$('.more.backward').on('click', function() {
-		var href = $(".n6");
-		if ($('#ajax').is(':visible')) {
-			$('#ajax').css({ display:'block' }).empty();
-		}
-		$('#ajax').html($(href).html()).hide().fadeIn('slow');
-	});
-
 	$('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
