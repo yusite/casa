@@ -876,7 +876,7 @@ header.band {
   background: #00030A;
   color: white;
   text-align: center;
-  padding: 20% 0 26% 0;
+  padding: 10% 0 15% 0;
   position: relative; }
 
 header.band h1 {
@@ -892,8 +892,8 @@ header.band h3 a {
   width: 100%;
   background: white;
   position: relative;
-  padding-top: 4em;
-  padding-bottom: 4em;
+  padding-top: 3em;
+  padding-bottom: 3em;
   -webkit-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.9);
   -moz-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.9);
   -o-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.9);
@@ -914,11 +914,14 @@ header.band h3 a {
   background-image: url(../img/valentino.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
-  padding: 15em;
+  padding: 13em;
   background-position: center center;
   background-attachment: fixed;
   -webkit-background-size: cover;
   background-size: cover; }
+
+.middle.high {
+  padding: 1em; }
 
 .download {
   text-align: center;
