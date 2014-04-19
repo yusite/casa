@@ -1,12 +1,13 @@
 /* imports
-================================ */
+====================================================== */
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
-@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Serif:400,700);
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:700);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -743,86 +744,8 @@ or wrap each row of columns in a <div class="row"> */
   width: 0;
   height: 0; }
 
-/* main style
-================================ */
-html {
-  font: 100%/1.5em 'PT Sans', sans-serif; }
-
-body {
-  font-size: 1em;
-  /* 16px / 16px */
-  color: #353738; }
-
-hr {
-  margin: 1em 0;
-  height: 1px;
-  background: #d3d3d3;
-  border: none;
-  width: 100%;
-  clear: both; }
-
-a, a:visited {
-  text-decoration: none; }
-
-a:hover {
-  text-decoration: underline; }
-
-div.band .columns {
-  padding-top: 1em;
-  padding-bottom: 1em; }
-
-header.band {
-  background: #00030A;
-  color: white;
-  text-align: center;
-  padding: 25% 0 28% 0;
-  position: relative;
-  -webkit-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.9);
-  -moz-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.9);
-  -o-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.9);
-  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.9); }
-
-h1, h2, h3 {
-  font-family: 'PT Serif', serif;
-  font-weight: 700;
-  text-align: center; }
-
-header.band h1 {
-  font-size: 3em;
-  line-height: 1em;
-  margin-bottom: 1em;
-  text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbbbbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaaaaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15); }
-
-h2 {
-  font-size: 1.6em;
-  margin-top: 1.5em;
-  margin-bottom: 1.5em; }
-
-h3 {
-  font-size: 1.1em;
-  font-family: 'PT Sans', sans-serif;
-  font-weight: 700;
-  margin-bottom: 1em;
-  text-transform: uppercase;
-  letter-spacing: 0.1em; }
-
-a.button:hover {
-  background: #ab3009; }
-
-footer {
-  font-size: 0.8em;
-  text-align: center; }
-
-.last a {
-  margin: 0 1em; }
-
-.section-1 {
-  position: relative;
-  z-index: 10;
-  width: 100%;
-  background: #fefefe; }
-
-/* make keyframes that tell the start state and the end state of our object */
+/* fade in effect
+====================================================== */
 @-webkit-keyframes fadeIn {
   from {
     opacity: 0; }
@@ -845,18 +768,172 @@ footer {
   opacity: 0;
   /* make things invisible upon start */
   -webkit-animation: fadeIn ease-in 1;
-  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
   -moz-animation: fadeIn ease-in 1;
   animation: fadeIn ease-in 1;
   -webkit-animation-fill-mode: forwards;
-  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
   -moz-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-duration: 1s;
   -moz-animation-duration: 1s;
   animation-duration: 1s; }
 
-/*as we don't haver many media queries, we'll stick them all here*/
+.fade-in.one {
+  -webkit-animation-delay: 0.7s;
+  -moz-animation-delay: 0.7s;
+  animation-delay: 0.7s; }
+
+.fade-in.two {
+  -webkit-animation-delay: 1.2s;
+  -moz-animation-delay: 1.2s;
+  animation-delay: 1.2s; }
+
+.fade-in.three {
+  -webkit-animation-delay: 1.6s;
+  -moz-animation-delay: 1.6s;
+  animation-delay: 1.6s; }
+
+/* 3D text shadow
+====================================================== */
+.text-3d {
+  text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbbbbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaaaaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15); }
+
+/* general styles
+====================================================== */
+html {
+  font: 100%/1.5em 'Noto Sans', "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun, sans-serif; }
+
+body {
+  font-size: 1em;
+  /* 16px / 16px */
+  color: #a4a9b5; }
+
+hr {
+  margin: 1em 0;
+  height: 1px;
+  background: #d3d3d3;
+  border: none;
+  width: 100%;
+  clear: both; }
+
+a, a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: underline; }
+
+div.band .columns {
+  padding-top: 1em;
+  padding-bottom: 1em; }
+
+h1, h2, h3 {
+  font-family: 'Montserrat', "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun, sans-serif;
+  font-weight: 700;
+  text-align: center; }
+
+h2 {
+  font-size: 1.6em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em; }
+
+h3 {
+  font-size: 1.1em;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em; }
+
+a.button:hover {
+  background: #ab3009; }
+
+footer {
+  font-size: 0.8em;
+  text-align: center; }
+
+.last a {
+  margin: 0 1em; }
+
+/* sidebar
+====================================================== */
+.sidebar h3 {
+  color: #4d515c;
+  text-align: right;
+  letter-spacing: 2px;
+  margin-bottom: 1.5em; }
+
+.sidebar li a {
+  color: #a4a9b5;
+  text-decoration: none; }
+
+.sidebar li {
+  font-size: 0.9em;
+  list-style-type: none;
+  text-align: right;
+  margin: 0.5em 0.1em 0.8em 0;
+  border-bottom: 1px solid #E1E7F5; }
+
+/* specific styles
+====================================================== */
+header.band {
+  background: #00030A;
+  color: white;
+  text-align: center;
+  padding: 20% 0 28% 0;
+  position: relative; }
+
+header.band h1 {
+  font-size: 3em;
+  line-height: 1em;
+  margin-bottom: 1em; }
+
+.information {
+  width: 100%;
+  background: white;
+  position: relative;
+  padding-top: 1em;
+  padding-bottom: 2em;
+  -webkit-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.9);
+  -moz-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.9);
+  -o-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.9);
+  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.9); }
+
+.information .columns.info_content {
+  padding: 1em;
+  padding-top: 5.4em;
+  text-align: center; }
+
+.information .columns.info_content img {
+  max-height: 9em;
+  max-width: 9em;
+  position: absolute; }
+
+.middle {
+  background-image: url(../img/valentino.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding-top: 8em;
+  padding-bottom: 8em;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  background-size: cover; }
+
+.download {
+  -webkit-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.9);
+  -moz-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.9);
+  -o-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.9);
+  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.9);
+  padding-top: 5em;
+  padding-bottom: 5em;
+  background-image: url(../img/bg_dark.jpg);
+  text-align: center;
+  font-size: 2em; }
+
+.download a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold; }
+
+/* media queries
+====================================================== */
 @media only screen and (min-width: 767px) {
   body {
     font-size: 1.125em;
@@ -874,7 +951,8 @@ footer {
 
   header.band h1 {
     font-size: 3.25em;
-    /*52 / 16*/ }
+    /*52 / 16*/
+    text-transform: uppercase; }
 
   a.button {
     padding: .75em 1.5em; }

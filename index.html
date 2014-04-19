@@ -24,6 +24,11 @@
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 
+<!-- JS
+================================================== -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
 </head>
 <body>
 <div id="skrollr-body">
@@ -36,7 +41,7 @@
  
         <div class="columns sixteen" data-0="opacity: 1" data-180="opacity: 0">
 
-        <h1 class="fade-in">Welcome to our new home!</h1>
+        <h1 class="fade-in text-3d">Welcome to our new home</h1>
          
         </div><!--/ columns--> 
      
@@ -44,48 +49,73 @@
  
 </header><!--/ band-->
  
-<div class="band main section-1" data-350-bottom="background:rgba(0, 0, 0, 1);" data-center="background:rgba(0, 0, 0, 0);">
- 
-    <div class="container" data-200-bottom="opacity: 0" data-center="opacity: 1">
-         
-        <div class="columns twelve offset-by-two">
-
-        <h2>Mek 's a Brew Lad</h2>
-				
-				 <p><strong>A pint 'o mild. Tell thi summat for nowt th'art nesh thee chuffin' nora eeh appens as maybe. Ey up is that thine god's own county. Be reet be reet nah then michael palin bloomin' 'eck gerritetten.</strong> Ah'll learn thi soft southern pansy. Any rooad soft southern pansy nobbut a lad mardy bum shu' thi gob face like a slapped arse. Ee by gum mardy bum michael palin. God's own county. Th'art nesh thee. Appens as maybe god's own county where's tha bin.</p>
-    
-		        <p>Aye any rooad. Th'art nesh thee is that thine tha daft apeth gi' o'er. What's that when it's at ooam that's champion nay lad tell thi summat for nowt. Dahn t'coil oil that's champion ey up sup wi' 'im where there's muck there's brass mardy bum. Be reet. Dahn t'coil oil chuffin' nora t'foot o' our stairs is that thine bloomin' 'eck chuffin' nora. Mardy bum bobbar chuffin' nora. Chuffin' nora mardy bum dahn t'coil oil nobbut a lad where there's muck there's brass bobbar. Soft lad nah then.</
-		        
-		        <p>By 'eck be reet tha what. Nah then nay lad gi' o'er bloomin' 'eck. A pint 'o mild nobbut a lad tha daft apeth nobbut a lad is that thine michael palin. Is that thine cack-handed will 'e 'eckerslike where's tha bin shu' thi gob. Tintintin tha knows. Nah then appens as maybe.</p>        
-         
-        </div><!--/ column-->
- 
-    </div><!--/ container-->
- 
-</div><!--/ main-->
- 
-<footer class="band main">
+<div class="band main information">
  
     <div class="container">
-         
-        <div class="columns eight">  
-        <p>Copyright &copy; Ian Yates 2013</p>     
-                     
+
+        <div class="columns four offset-by-one sidebar">
+        	<h3>Informations</h3>
+			<ul>
+				<li><a class="more" href=".n2">房东信息</a></li>
+				<li><a class="more" href=".n3">中介电话</a></li>
+				<li><a class="more" href=".n4">公寓地址</a></li>
+				<li><a class="more" href=".n5">汇款帐号</a></li>
+			</ul>
+        </div>
+
+        <div class="columns ten info_content">
+        <p id="ajax" class="n1" data-bottom-top="opacity: 0;" data-center="opacity: 1;" >
+        	<img data-bottom-top="left:100%;" data-center="left:50%;" src="img/logo.jpg">
+        </p>
+
+        <p class="n2 invis">
+        	Name: Gianfranco Mosca<br/>Tel: 335424276<br/>Email: moscagianfranco@alice.it
+        </p>
+
+        <p class="n3 invis">
+        	Name: Laura<br/>Tel: 3351225876
+        </p>
+
+        <p class="n4 invis">
+        	Corso Racconigi, 30 ter<br/>10139 Torino<br/>Italy
+        </p>
+
+        <p class="n5 invis">
+        	IBAN: Mosca Crosetto<br/>IT 64 Y030 69010801 00000 440118
+        </p>
+
         </div><!--/ column-->
-     
-        <div class="columns eight last">
-        <p>Copyright &copy; Ian Yates 2013</p>
-         
-        </div><!--/ column-->
- 
+
     </div><!--/ container-->
  
-</footer><!--/ main-->
+</div><!--/ information-->
+
+<div class="band main middle">
+ 
+    <div class="container">
+        <div class="columns sixteen"></div>
+    </div>
+
+</div><!--/ middle-->
+
+<div class="band main download">
+ 
+    <div class="container">
+
+        <div class="columns fourteen offset-by-one" data-bottom-top="opacity: 0;" data-100-bottom="opacity: 1;">
+        	<a class="text-3d" href="https://drive.google.com/file/d/0B6sObx0p_r5fR042bHFJbUpQajQ/edit?usp=sharing">合同及收据复印件下载</a>
+        </div>
+
+    </div><!--/ container-->
+ 
+</div><!--/ download-->
 <!-- Javascript
 ================================================== -->
 	<script type="text/javascript" src="js/skrollr.min.js"></script>	
 	<script type="text/javascript">
-		skrollr.init();
+	var s = skrollr.init({
+		forceHeight: false
+	});
 	</script>
 </div>
 </body>
