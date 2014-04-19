@@ -41,7 +41,12 @@ header.band {
 	background: #00030A;
 	color: white;
 	text-align: center;
-	padding: 20% 0 25% 0;
+	padding: 25% 0 28% 0;
+	position: relative;
+	-webkit-box-shadow: 0 0 16px 0 rgba(0,0,0,0.9);
+	-moz-box-shadow: 0 0 16px 0 rgba(0,0,0,0.9);
+	-o-box-shadow: 0 0 16px 0 rgba(0,0,0,0.9);
+	box-shadow: 0 0 16px 0 rgba(0,0,0,0.9);
 }
 
 h1, h2, h3 {
