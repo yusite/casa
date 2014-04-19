@@ -5,45 +5,41 @@
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 <head>
 
-<!-- Basic Page Needs
-================================================== -->
+<!-- Basic Page Needs -->
 	<meta charset="utf-8">
 	<title>Welcome to our new home!</title>
 	<meta name="description" content="Welcome to our new home!">
 	<meta name="author" content="YU ZIJIE">
 
-<!-- Mobile Specific Metas
-================================================== -->
+<!-- Mobile Specific Metas -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-<!-- CSS
-================================================== -->
+<!-- CSS -->
 	<link rel="stylesheet" href="css/main.css">
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 
-<!-- JS
-================================================== -->
+<!-- JS -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/smooth-scroll.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 
 </head>
 <body>
 <div id="skrollr-body">
-<!-- Primary Page Layout
-================================================== -->
 
+<!-- header -->
 <header class="band" data-0="background-position:0px 0px;" data-400="background-position:0px -150px;">
  
     <div class="container">
  
         <div class="columns sixteen" data-0="opacity: 1" data-180="opacity: 0">
 
-        <h1 class="fade-in one text-3d">Welcome to our new home</h1>
+        <h1 class="fade-in text-3d">Welcome to our new home</h1>
 
-        <h3 class="fade-in three"><a href="#here">Informations</a> • <a href="#there">Downloads</a></h3>
+        <h3 class="fade-in two"><a data-scroll href="#here">Informations</a> • <a data-scroll data-options="speed: 1800; easing: Linear;" href="#there">Downloads</a></h3>
          
         </div><!--/ columns--> 
      
@@ -62,7 +58,7 @@
 				<li><a class="more" href=".n3">中介电话</a></li>
 				<li><a class="more" href=".n4">公寓地址</a></li>
 				<li><a class="more" href=".n5">汇款帐号</a></li>
-                <li><a href="#skrollr-body">Back</a></li>
+                <li><a data-scroll href="#skrollr-body">Back</a></li>
 			</ul>
         </div>
 
@@ -112,7 +108,7 @@
         <div class="columns fourteen offset-by-one">
         	<p><a href="https://drive.google.com/file/d/0B6sObx0p_r5fR042bHFJbUpQajQ/edit?usp=sharing">合同及收据复印件下载</a></p>
             <h3 class="goback">
-            <a href="#skrollr-body">Back</a>
+            <a data-scroll href="#skrollr-body">Back</a>
             </h3>
         </div>
 
@@ -127,13 +123,19 @@
     </div>
 
 </div><!--/ middle-->
-<!-- Javascript
-================================================== -->
+
+<!-- Javascript -->
 	<script type="text/javascript" src="js/skrollr.min.js"></script>	
 	<script type="text/javascript">
 	var s = skrollr.init({
 		forceHeight: false
 	});
+    smoothScroll.init({
+        speed: 800,
+        easing: 'easeOutCubic',
+        offset: 0,
+        updateURL: false
+    });
 	</script>
 </div>
 </body>
