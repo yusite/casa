@@ -884,6 +884,10 @@ header.band h1 {
   line-height: 1em;
   margin-bottom: 1em; }
 
+header.band h3 a {
+  text-decoration: none;
+  color: white; }
+
 .information {
   width: 100%;
   background: white;
