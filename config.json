@@ -1,0 +1,26 @@
+{
+  "locals": {
+    "url": "http://daily.yuz.me",
+    "name": "工作记录",
+    "owner": "Zac YU",
+    "description": "记录每天的学习进度"
+  },
+  "plugins": [
+    "./plugins/paginator.coffee"
+  ],
+  "require": {
+    "moment": "moment",
+    "_": "underscore",
+    "typogr": "typogr"
+  },
+  "jade": {
+    "pretty": true
+  },
+  "markdown": {
+    "smartLists": true,
+    "smartypants": true
+  },
+  "paginator": {
+    "perPage": 3
+  }
+}
